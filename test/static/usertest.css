@@ -1,0 +1,14 @@
+#userName{
+	font-family: "Lucida Handwriting";
+}
+
+#profileImg{
+	border-style: solid;
+	border-width: 2px;
+}
+
+table, tr{
+        border-style: solid;
+        border-width: 2px;
+}
+
