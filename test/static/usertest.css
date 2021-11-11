@@ -1,14 +1,54 @@
-#userName{
-	font-family: "Lucida Handwriting";
+body { /*styling for the background*/
+	background-image: url("background.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% auto;
 }
 
-#profileImg{
+#userInfo{ /*styling for the user information box*/
+	width: 50%;
+	padding: 10px;
+	background-color: white;
+        border-style: dashed;
+        border-width: 5px;
+        border-color: #cccccc;
+}
+
+#userName{ /*styling for the username text*/
+	font-family: "Lucida Handwriting";
+	font-size: 25px;
+	color: #ffb3ff;
+	text-align: left;
+}
+
+#descHeader{
+	font-family: "Garamond";
+	font-size: 25px;
+	color: #9d629d;
+}
+
+#desc{
+        font-family: "Garamond";
+	font-size: 15px;
+	color: black;
+}
+
+#userImg{ /*styling for the user profile picture*/
 	border-style: solid;
 	border-width: 2px;
 }
 
-table, tr{
-        border-style: solid;
-        border-width: 2px;
+#userpics{ /*styling for the table containing images*/
+	width: 75%;
+	height: 75%;
+	background-color: white;
+	border-style: dashed;
+	border-width: 5px;
+	border-color: #cccccc;
+}
+
+.pics{ /*styling for the tds containing the images*/
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
