@@ -1,0 +1,22 @@
+{% extends "base.html" %} <!--gets the template for the navigation bar-->
+	{% block content %}
+	<br>
+		<div id="userInfo"> <!--User information area-->
+			<div>
+				<img src="../static/img/vmask.jpg" id="profileImg">
+				<h3 id="userName">myName</h3>
+			</div>
+			<div>
+				<h4 id="descHeader">Description:</h4>
+					<p id="desc">
+					<i>(no description has been inputted yet. Add a description to tell your friends about yourself!</i>
+					</p>
+			</div>
+		</div>
+		<br>
+		<table id="userPics"> <!--Images-->
+			<tr>
+				<td><p style="font-size: 30px; vertical-align: top;">You haven't posted any images.<br>Post some images to fill up your profile!</td>
+       	                </tr>
+		</table>
+	{% endblock %}

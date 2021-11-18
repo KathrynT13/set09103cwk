@@ -8,9 +8,9 @@
 		<div id="baseHead">
 			<h1 id="logo">ImmePic.net</h1>
 			<ul id="navbar">
-				<li><a href="#">home</a></li>
-				<li><a href="#">following</a></li>
-				<li><a href="#">my page</a></li>
+				<li><a href="{{url_for('home', filename='home.html')}}">home</a></li>
+				<li><a href="{{url_for('friends', filename='friends.html')}}">following</a></li>
+				<li><a href="{{url_for('me', filename='users/mine.html')}}">my page</a></li>
 			</ul>
 		</div>
 		{% block content %} {% endblock %}
