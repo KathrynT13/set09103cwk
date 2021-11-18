@@ -1,11 +1,6 @@
-<DOCTYPE! html>
-<html>
-	<head>
-		<title>userPageTest</title>
-		<link href="{{url_for('static',filename='css/usertest.css')}}" rel="stylesheet"/>	
-	</head>
-	
-	<body>
+{% extends "users/userBase.html" %} <!--gets the template for the navigation bar-->
+	{% block content %}
+	<br>
 		<div id="userInfo"> <!--User information area-->
 			<div>
 				<img src="../static/img/vmask.jpg" id="profileImg">
@@ -27,17 +22,13 @@
 			</tr>
                         <tr>
                                 <td class="pic"><img src="../static/img/vmask.jpg"></td>
-                                <td class="pic"><img src="../static/img/vmask.jpg"></td>
-                                <td class="pic"><img src="../static/img/vmask.jpg"></td>
-                        </tr>
-                        <tr>
-                                <td class="pic"><img src="../static/img/vmask.jpg"></td>
-                                <td class="pic"><img src="../static/img/vmask.jpg"></td>
-                                <td class="pic"><img src="../static/img/vmask.jpg"></td>
-                        </tr>
-
-
+       	                        <td class="pic"><img src="../static/img/vmask.jpg"></td>
+       	                        <td class="pic"><img src="../static/img/vmask.jpg"></td>
+       	                </tr>
+       	                <tr>
+       	                        <td class="pic"><img src="../static/img/vmask.jpg"></td>
+       	                        <td class="pic"><img src="../static/img/vmask.jpg"></td>
+       	                        <td class="pic"><img src="../static/img/vmask.jpg"></td>
+       	                </tr>
 		</table>
-	
-	</body>
-</html>
+	{% endblock %}
