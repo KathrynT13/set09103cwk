@@ -47,6 +47,7 @@ body { /*styling for the background*/
 	background-image: url("../img/background.jpg");
 	background-repeat: no-repeat;
 	background-size: 100% auto;
+	background-color: #b6c8de;
 }
 
 #userInfo{ /*styling for the user information box*/
@@ -77,9 +78,12 @@ body { /*styling for the background*/
 	color: black;
 }
 
-#userImg{ /*styling for the user profile picture*/
-	border-style: solid;
+#profileImg{ /*styling for the user profile picture*/
+	border-style: dashed;
 	border-width: 2px;
+	border-color: #999999;
+	width: 150px;
+	height: auto;
 }
 
 #userpics{ /*styling for the table containing images*/
@@ -91,9 +95,36 @@ body { /*styling for the background*/
 	border-color: #cccccc;
 }
 
-.pics{ /*styling for the tds containing the images*/
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+.pic{ /*styling for the tds containing the images*/
+	text-align: center;
 }
 
+.pic img{ /*styling for the images themselves*/
+	width: 250px;
+	height: 250px;
+	border: 1px dashed #ccc;
+}
+
+.pic img:hover{ /*styling for when the images are hovered over*/
+	border: 2px solid #777;
+	opacity: 0.5;
+}
+
+.follows{
+	font-family: "Garamond";
+	font-size: 50px;
+	color: #92629d;
+	text-decoration: none;
+}
+
+.follows:hover{
+	text-decoration: underline;
+	opacity: 0.5;
+	font-style: italic;
+}
+
+.followImg{
+	border: 1px solid #ccc;
+	width: 45px;
+	height: 45px;
+}

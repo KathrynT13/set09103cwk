@@ -1,0 +1,53 @@
+{% extends "base.html" %} <!--gets the template for the navigation bar-->
+	{% block content %}
+	<br>
+		<div id="userInfo"> <!--User information area-->
+			<div>
+				<img src="../static/img/nature/pfp.png" id="profileImg">
+				<h3 id="userName">WalkingOnSunshine</h3>
+			</div>
+			<div>
+				<h4 id="descHeader">Description:</h4>
+					<p id="desc">
+						pretty outdoor photography 
+					</p>
+			</div>
+		</div>
+		<br>
+		<table id="userPics"> <!--Images-->
+			<tr>
+				<td class="pic">
+					<a href="https://www.uncommongoods.com/blog/wp-content/uploads/2014/04/4b473542294711e3886922000a1dda77_8.jpg">
+						<img src="../static/img/nature/dandelion.png">
+					</a>
+				</td>
+				<td class="pic">
+					<a href="https://www.wallpapers.net/anime-nature-plants-leaves-hd-wallpaper/download/400x400.jpg">
+						<img src="../static/img/nature/leaves.png">
+					</a>
+				</td>
+				 <td class="pic">
+					 <a href="https://upload.wikimedia.org/wikipedia/commons/4/44/ThatWanakaTree_at_Sunrise.jpg">
+                                                <img src="../static/img/nature/tree.png">
+                                        </a>
+                                </td>
+			</tr>
+                        <tr>
+                                <td class="pic">
+                                        <a href="https://i.pinimg.com/originals/ce/41/7f/ce417f25e14edd124ee0dc1b22699b5a.jpg">
+                                                <img src="../static/img/nature/river.png">
+                                        </a>
+                                </td>
+                                <td class="pic">
+                                        <a href="https://publiccoastbrewing.com/wp-content/uploads/2020/04/cannonbeachphoto-original-6-1-GfZJCg.tmp_.jpg">
+                                                <img src="../static/img/nature/beach.png">
+                                        </a>
+                                </td>
+                                 <td class="pic">
+                                        <a href="https://images.squarespace-cdn.com/content/v1/5a54afc2e9bfdf89573d7cf7/1538150940432-XP0WIFNRMP09B84UQWTR/Rope-Bridge-by-Treehouse-Life-Ltd%2B-River-Brue-Castle-Cary-rope-work-balustrades.jpg">
+                                                <img src="../static/img/nature/bridge.png">
+                                        </a>
+                                </td>
+                        </tr>
+		</table>
+	{% endblock %}

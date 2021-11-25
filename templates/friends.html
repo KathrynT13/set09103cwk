@@ -1,10 +1,22 @@
 {% extends "base.html" %}
 	{% block content %}
 		<br>
-		<h1>Following:</h1>
-		<ul>
-			<li>test</li>
-			<li>test</li>
-			<li>test</li>
-		</ul>
+		<div id="userInfo">
+			<h1 id="descHeader">Following:</h1>
+			<ul style="list-style: none;">
+				<li>
+					<a class="follows" href="{{url_for('crafts', filename='users/crafts.html')}}">
+					<img src="../static/img/crafts/pfp.png" class="followImg">CraftsWithLucy</a>
+				</li>
+				<li>
+                                        <a class="follows" href="{{url_for('cats', filename='users/cats.html')}}">
+                                        <img src="../static/img/cats/pfp.png" class="followImg">CatsDaily</a>
+                                </li>				
+                                <li>
+                                        <a class="follows" href="{{url_for('nature', filename='users/nature.html')}}">
+                                        <img src="../static/img/nature/pfp.png" class="followImg">WalkingOnSunshine</a>
+                                </li>
+
+			</ul>
+		</div>
 	{% endblock %}

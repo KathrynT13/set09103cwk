@@ -13,5 +13,17 @@ def me():
 def friends():
     return render_template('friends.html')
 
+@app.route('/craftswithlucy')
+def crafts():
+    return render_template('users/crafts.html')
+
+@app.route('/catsdaily')
+def cats():
+    return render_template('users/cats.html')
+
+@app.route('/walkingonsunshine')
+def nature():
+    return render_template('users/nature.html')
+
 if __name__ == "__main__":
     app.run(host='0.0.0.0', debug=True)
