@@ -1,5 +1,37 @@
 {% extends "base.html" %}
 	{% block content %}
 		<br>
-		<h1>root directory test</h1>
-	{% endblock %}
+		<div id="feedHead">
+			<h1>Welcome back!<br>
+			<br>Here's some posts you might have missed</h1>
+		</div>
+		<br>
+                <div class="post">
+                         <a href="{{url_for('nature', filename='users/nature.html')}}">
+                                 <img class="postPfp" src="../static/img/nature/pfp.png"></a>
+                         <br>
+                         <img class="postImg" src="../static/img/nature/river.png">
+                </div>
+		<br>
+		<div class="post">
+			 <a href="{{url_for('crafts', filename='users/crafts.html')}}">
+				 <img class="postPfp" src="../static/img/crafts/pfp.png"></a>
+			 <br>
+			 <img class="postImg" src="../static/img/crafts/boba.png">
+		</div>
+		<br>
+                <div class="post">
+                         <a href="{{url_for('cats', filename='users/cats.html')}}">
+                                 <img class="postPfp" src="../static/img/cats/pfp.png"></a>
+                         <br>
+                         <img class="postImg" src="../static/img/cats/snowy.png">
+                </div>
+                <br>
+                <div class="post">
+                         <a href="{{url_for('crafts', filename='users/crafts.html')}}">
+                                 <img class="postPfp" src="../static/img/crafts/pfp.png"></a>
+                         <br>
+                         <img class="postImg" src="../static/img/crafts/octo.png">
+                </div>
+
+{% endblock %}

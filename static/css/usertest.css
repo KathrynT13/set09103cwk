@@ -128,3 +128,45 @@ body { /*styling for the background*/
 	width: 45px;
 	height: 45px;
 }
+
+#feedHead{
+	margin: auto;
+	width: 25%;
+	background-color: #cccccc;
+	padding: 10px;
+	border-radius: 25px;
+	border-color: #777;
+	border-style: dashed;
+}
+
+#feedHead h1{
+	font-family: "lucida handwriting";
+	font-size: 25px;
+	color: #92629d;
+}
+
+.post {
+	margin: auto;
+	padding: 10px;
+	background-color: white;
+	border: 2px dashed #ccc;
+	border-radius: 25px;
+	width: fit-content;
+}
+
+.postPfp{
+	float: left;
+	width: 50px;
+	height: auto;
+
+}
+
+.post a:hover{
+        opacity: 0.5;
+}
+
+.postImg {
+	padding: 5px;
+	height: 75%;
+	width: auto;
+}
